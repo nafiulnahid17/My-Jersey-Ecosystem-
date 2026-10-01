@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      DATABASE_PATH: /app/data/my-jersey.sqlite
+      ADMIN_API_KEY: ${ADMIN_API_KEY:?Set ADMIN_API_KEY before starting}
+      SUPABASE_URL: ${SUPABASE_URL:-}
+      SUPABASE_SECRET_KEY: ${SUPABASE_SECRET_KEY:-}
+      TRUST_PROXY: "false"
+    volumes:
+      - my-jersey-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  my-jersey-data:

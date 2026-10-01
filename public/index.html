@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#061a27" />
+    <meta name="description" content="My Jersey — custom sportswear for players, clubs and teams." />
+    <title>My Jersey | Custom sportswear</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect rx=%2220%22 width=%22100%22 height=%22100%22 fill=%22%2306a64f%22/><path d=%22M18 70 70 18h16L34 70z%22 fill=%22%23a7f432%22/%3E</svg>" />
+    <link rel="stylesheet" href="/styles.css?v=1.0.1" />
+    <script type="module" src="/app.js?v=1.0.1"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <span>Custom sportswear for teams and individuals</span>
+        <span class="utility-items" aria-label="Available categories">
+          <span>Football</span><span>Cricket</span><span>Clubs</span>
+        </span>
+      </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <div class="container nav-shell">
+        <a href="/" class="brand" data-link aria-label="My Jersey home">
+          <span class="brand-mark" aria-hidden="true"><i></i></span>
+          <span>My Jersey</span>
+        </a>
+        <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span><span class="sr-only">Menu</span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="/" data-link>Home</a>
+          <a href="/shop" data-link>Shop</a>
+          <a href="/custom-jersey" data-link>Custom Jersey</a>
+          <a href="/team-order" data-link>Team Order</a>
+          <a href="/about" data-link>About</a>
+          <a href="/contact" data-link>Contact</a>
+        </nav>
+        <a class="nav-cta" href="/custom-jersey" data-link>Start a design</a>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1"></main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="/" class="brand brand-light" data-link><span class="brand-mark" aria-hidden="true"><i></i></span><span>My Jersey</span></a>
+          <p>Custom sportswear shaped around your team, colors and identity.</p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <a href="/shop" data-link>Shop</a>
+          <a href="/custom-jersey" data-link>Custom jersey</a>
+          <a href="/team-order" data-link>Team orders</a>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <a href="/about" data-link>About</a>
+          <a href="/contact" data-link>Contact</a>
+          <a href="/admin" data-link>Admin</a>
+        </div>
+        <div>
+          <h2>Start a conversation</h2>
+          <p>Tell us what you want to create. We’ll keep the details in one place for follow-up.</p>
+          <a class="text-link" href="/contact" data-link>Send a message <span>→</span></a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> My Jersey.</span>
+        <span>Built without sample inventory or fabricated reviews.</span>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

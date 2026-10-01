@@ -1,0 +1,21 @@
+{
+  "name": "my-jersey-commerce",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-oriented starter for the My Jersey storefront and API",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch server/server.js",
+    "start": "node --env-file-if-exists=.env server/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "supabase": "^2.119.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2"
+  }
+}

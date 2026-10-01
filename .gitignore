@@ -1,0 +1,9 @@
+data/
+.env
+*.log
+node_modules/
+dist/
+*.zip
+supabase/.temp/
+.DS_Store
+Thumbs.db
