@@ -7,13 +7,17 @@
   "scripts": {
     "dev": "node --env-file-if-exists=.env --watch server/server.js",
     "start": "node --env-file-if-exists=.env server/server.js",
-    "test": "node --test"
+    "test": "node --test",
+    "cf:dev": "wrangler dev",
+    "cf:check": "wrangler deploy --dry-run",
+    "cf:deploy": "wrangler deploy"
   },
   "engines": {
     "node": ">=22.5.0"
   },
   "devDependencies": {
-    "supabase": "^2.119.0"
+    "supabase": "^2.119.0",
+    "wrangler": "^4.146.0"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2"
